@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title> 
+<style> 
+	/*set border to the form*/ 
+	
+	form { 
+		border: 3px solid #f1f1f1; 
+	} 
+	/*assign full width inputs*/ 
+	
+	input[type=text], 
+	input[type=password] { 
+		width: 100%; 
+		padding: 12px 20px; 
+		margin: 8px 0; 
+		display: inline-block; 
+		border: 1px solid #ccc; 
+		box-sizing: border-box; 
+	} 
+	/*set a style for the buttons*/ 
+	
+	button { 
+		background-color: #4CAF50; 
+		color: white; 
+		padding: 14px 20px; 
+		margin: 8px 0; 
+		border: none; 
+		cursor: pointer; 
+		width: 100%; 
+	} 
+	/* set a hover effect for the button*/ 
+	
+	button:hover { 
+		opacity: 0.8; 
+	} 
+	/*set extra style for the cancel button*/ 
+	
+	
+	.container { 
+		padding: 16px; 
+	} 
+	/*set the forgot password text*/ 
+	
+	span.psw { 
+		float: right; 
+		padding-top: 16px; 
+	} 
+	/*set styles for span and cancel button on small screens*/ 
+	
+	@media screen and (max-width: 300px) { 
+		span.psw { 
+			display: block; 
+			float: none; 
+		} 
+		.cancelbtn { 
+			width: 100%; 
+		} 
+	} 
+</style> 
+    <script src="script.js"></script>
+</head>
+<body >
+	<div class="outdiv">
+	<form name="f" onsubmit="return validatereg(f)">
+		<h1 align="center">Registration Form</h1>
+		<label>First Name:</label>
+		<input type="text" name="firstName" placeholder="Enter First Name"><br><br>
+		<label>Last Name:</label>
+		<input type="text" name="lastName" placeholder="Enter Last Name" ><br><br>
+		<label>Email Id:</label>
+		<input type="text" name="emailId" placeholder="Enter Email Id" ><br><br>
+		<label>Password:</label>
+		<input type="password" name="password" placeholder="Enter Password" ><br><br>
+		<label>Confirm password:</label>
+		<input type="password" name="repassword" placeholder="Re-enter Password" ><br><br>
+
+        <label>Phone Number</label>
+		<input type="text" name="phNo" placeholder="Enter Phone Number" ><br><br>
+		<button>Register</button>
+	</form><hr>
+	<p class="blue">Existing User?<button style="color:blue"><a href="login.html">Login</a></button></p?
+</div>
+</body>
+</html>
